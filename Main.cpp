@@ -8,4 +8,5 @@ int main()
     float degreesC = degreesF - 32;
     degreesC *= 5.556;
     cout << degreesC;
+    return 0;
 }
