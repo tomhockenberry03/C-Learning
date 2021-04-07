@@ -3,10 +3,12 @@ using namespace std;
 
 int main()
 {
-    float degreesF;
-    cin >> degreesF;
-    float degreesC = degreesF - 32;
-    degreesC *= 5.556;
-    cout << degreesC;
-    return 0;
+    string txt;
+    getline (cin, txt);
+    string flipped = txt;
+    for (int i = 0; i < txt.length(); i++) {
+        flipped[i] = txt[txt.length() - 1 - i];
+        cout << i << endl;
+    }
+    cout << flipped;
 }
